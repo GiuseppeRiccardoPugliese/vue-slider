@@ -86,6 +86,9 @@ createApp({
             this.timer = setInterval(() => {
                 this.nextImg();
             }, 3000);
+        },
+        stopAutoPlay() {
+            clearInterval(this.timer)
         }
     },
     mounted() {
